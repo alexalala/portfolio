@@ -1,3 +1,13 @@
-.Typist {
-  margin-top: 3rem;
-  font-size: 2rem; }
+/* COLOURS */
+/* FONTS */
+.home {
+  font-size: 5rem;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .home img {
+    position: fixed;
+    height: 200px;
+    left: 2rem;
+    bottom: 2rem; }

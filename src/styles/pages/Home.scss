@@ -1,4 +1,16 @@
-.Typist {
-  margin-top: 3rem;
-  font-size: 2rem;
+@import '../vars.scss';
+
+.home {
+  font-size: 5rem;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    position: fixed;
+    height: 200px;
+    left: 2rem;
+    bottom: 2rem;
+  }
 }
