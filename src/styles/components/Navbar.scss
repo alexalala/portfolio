@@ -8,6 +8,10 @@ ul {
     display: inline-block;
     margin: 1.5rem;
 
+    .active {
+      color: $secondary-color;
+    }
+
     a {
       text-decoration: none;
       color: $white;

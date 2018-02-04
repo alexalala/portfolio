@@ -6,6 +6,8 @@ ul {
   ul li {
     display: inline-block;
     margin: 1.5rem; }
+    ul li .active {
+      color: #4d8c1e; }
     ul li a {
       text-decoration: none;
       color: #fff; }
