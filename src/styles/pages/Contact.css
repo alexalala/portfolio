@@ -1,0 +1,17 @@
+/* COLOURS */
+/* FONTS */
+.contact {
+  width: 80%;
+  margin-left: 10%; }
+  .contact p {
+    margin: 2rem 0; }
+  .contact form {
+    text-align: left; }
+    .contact form input,
+    .contact form textarea {
+      width: 100%;
+      background-color: #fff;
+      box-sizing: border-box;
+      display: block;
+      margin: 1rem 0;
+      padding: 1rem; }
