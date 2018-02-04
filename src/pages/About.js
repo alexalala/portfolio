@@ -6,7 +6,8 @@ class About extends Component {
   render() {
     return (
       <div className="about">
-        <img src={require('../styles/assets/myself.jpg')} alt="myself"/>
+        <img src={require('../styles/assets/myself.jpg')} alt="myself" className="fade-in one"/>
+        <p className="fade-in two">I&lsquo;m Alexandra. A front-end web developer based in Norwich.</p>
       </div>
     );
   };
