@@ -5,4 +5,5 @@ ul {
     display: inline-block;
     margin-right: 2rem; }
     ul li a {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #fff; }
