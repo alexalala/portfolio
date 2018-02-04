@@ -1,0 +1,8 @@
+ul {
+  text-align: right;
+  font-size: 1.5rem; }
+  ul li {
+    display: inline-block;
+    margin-right: 2rem; }
+    ul li a {
+      text-decoration: none; }
