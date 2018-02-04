@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 
+import '../styles/pages/About.css';
+
 class About extends Component {
   render() {
     return (
-      <p>About</p>
+      <div className="about">
+        <img src={require('../styles/assets/myself.jpg')} alt="myself"/>
+      </div>
     );
   };
 };
