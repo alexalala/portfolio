@@ -11,7 +11,6 @@ class Home extends Component {
         <Typist>
           Hey, I&lsquo;m Alexandra.
         </Typist>
-        <img src={require('../styles/assets/palm-leaf.svg')} alt="palm leaf"/>
       </div>
     );
   };

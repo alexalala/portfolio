@@ -6,3 +6,8 @@
   font-family: "Raleway", sans-serif;
   color: #fff;
   height: 100%; }
+  .App .palm {
+    position: fixed;
+    height: 200px;
+    left: 2rem;
+    bottom: 2rem; }

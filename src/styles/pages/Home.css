@@ -6,8 +6,3 @@
   display: flex;
   align-items: center;
   justify-content: center; }
-  .home img {
-    position: fixed;
-    height: 200px;
-    left: 2rem;
-    bottom: 2rem; }

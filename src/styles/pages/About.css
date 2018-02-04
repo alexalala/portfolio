@@ -39,9 +39,9 @@
   animation-delay: 0.3s; }
 
 .fade-in.two {
-  -webkit-animation-delay: 0.5s;
-  -moz-animation-delay: 0.5s;
-  animation-delay: 0.5s; }
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s; }
 
 .about img {
   height: 240px;

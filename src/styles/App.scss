@@ -6,4 +6,11 @@
   font-family: $primary-font;
   color: $white;
   height: 100%;
+
+  .palm {
+    position: fixed;
+    height: 200px;
+    left: 2rem;
+    bottom: 2rem;
+  }
 }
