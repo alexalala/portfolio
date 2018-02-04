@@ -1,6 +1,8 @@
+@import './vars.scss';
+
 .App {
   text-align: center;
-  background-color: #febcc8;
-  color: #fff;
+  background-color: $primary-color;
+  color: $white;
   height: 100%;
 }
