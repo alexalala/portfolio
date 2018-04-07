@@ -11,6 +11,7 @@ class Home extends Component {
         <Typist>
           Hey, I&lsquo;m Alexandra.
         </Typist>
+        <div className="triangle"></div>
       </div>
     );
   };
