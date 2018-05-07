@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styled from "styled-components";
+import styled from 'styled-components';
 import Typist from 'react-typist';
 
 import 'react-typist/dist/Typist.css';
