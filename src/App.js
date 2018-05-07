@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import { Route, BrowserRouter } from 'react-router-dom';
+import { injectGlobal } from 'styled-components';
 
 import Navbar from './components/Navbar';
 
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
-
-import './styles/App.css';
 
 class App extends Component {
   render() {
@@ -23,5 +22,16 @@ class App extends Component {
     );
   }
 }
+
+/* GLOBAL STYLES */
+injectGlobal`
+  .App {
+    text-align: center;
+    background-color: #febcc8;
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    height: 100%;
+  }
+`;
 
 export default App;
