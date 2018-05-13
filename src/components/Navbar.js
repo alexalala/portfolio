@@ -1,16 +1,46 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import styled from 'styled-components';
 
-import '../styles/components/Navbar.css';
+import * as palette from '../styles/Variables.js';
+
+const Nav = styled.ul`
+  text-align: right;
+  font-size: 1.5rem;
+`;
+
+const NavItem = styled.li`
+  display: inline-block;
+  margin: 1.5rem;
+
+  &:active {
+    color: ${palette.secondary_color};
+  }
+  a {
+    text-decoration: none;
+    color: ${palette.white};
+  }
+`;
+
+const NavA = styled(NavLink)`
+  text-decoration: none;
+  color: ${palette.white};
+`;
 
 class Navbar extends Component {
   render() {
     return (
-      <ul>
-        <li><NavLink exact to="/" activeClassName="active">Home</NavLink></li>
-        <li><NavLink to="/about" activeClassName="active">About</NavLink></li>
-        <li><NavLink to="/contact" activeClassName="active">Contact</NavLink></li>
-      </ul>
+      <Nav>
+        <NavItem>
+          <NavA exact to="/" activeClassName="active">Home</NavA>
+        </NavItem>
+        <NavItem>
+          <NavA to="/about" activeClassName="active">About</NavA>
+        </NavItem>
+        <NavItem>
+          <NavA to="/contact" activeClassName="active">Contact</NavA>
+        </NavItem>
+      </Nav>
     );
   };
 };
