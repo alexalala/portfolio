@@ -1,28 +1,53 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 
-import '../styles/pages/Contact.css';
+import Subheader from '../components/Subheader.js';
+
+const ContactContent = styled.div`
+  width: 80%;
+  margin-left: 10%;
+  text-align: left;
+`;
+
+const FormInput = styled.input`
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  display: block;
+  margin: 1rem 0;
+  padding: 1rem;
+`;
+
+const FormTextarea = styled.textarea`
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  display: block;
+  margin: 1rem 0;
+  padding: 1rem;
+`;
 
 class Contact extends Component {
   render() {
     return (
-      <div className="contact">
-        <p>Feel free to get in touch!</p>
+      <ContactContent>
+        <Subheader>Feel free to get in touch!</Subheader>
         <form action="https://formspree.io/contact@alexandramoo.re" method="POST">
           <label>
             Your name:
-            <input type="text" name="name"></input>
+            <FormInput type="text" name="name"></FormInput>
           </label>
           <label>
             Your email:
-            <input type="email" name="_replyto"></input>
+            <FormInput type="email" name="_replyto"></FormInput>
           </label>
           <label>
             Description:
-            <textarea rows="3" cols="3" name="description"></textarea>
+            <FormTextarea rows="3" cols="3" name="description"></FormTextarea>
           </label>
-          <input type="submit" value="Send"></input>
+          <FormInput type="submit" value="Send"></FormInput>
         </form>
-      </div>
+      </ContactContent>
     );
   };
 };
