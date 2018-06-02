@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Typist from 'react-typist';
 
 import 'react-typist/dist/Typist.css';
-import * as palette from '../styles/Variables.js';
+import * as palette from '../styles/variables.js';
 
 const HomeContent = styled.div`
   font-size: 5rem;
