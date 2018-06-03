@@ -2,12 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import Subheader from '../components/Subheader.js';
-
-const ContactContent = styled.div`
-  width: 80%;
-  margin-left: 10%;
-  text-align: left;
-`;
+import PageWrapper from '../layouts/PageWrapper.jsx';
 
 const FormInput = styled.input`
   width: 100%;
@@ -30,7 +25,7 @@ const FormTextarea = styled.textarea`
 class Contact extends Component {
   render() {
     return (
-      <ContactContent>
+      <PageWrapper>
         <Subheader>Feel free to get in touch!</Subheader>
         <form action="https://formspree.io/contact@alexandramoo.re" method="POST">
           <label>
@@ -47,7 +42,7 @@ class Contact extends Component {
           </label>
           <FormInput type="submit" value="Send"></FormInput>
         </form>
-      </ContactContent>
+      </PageWrapper>
     );
   };
 };

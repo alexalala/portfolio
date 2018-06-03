@@ -4,14 +4,7 @@ import Typist from 'react-typist';
 
 import 'react-typist/dist/Typist.css';
 import * as palette from '../styles/variables.js';
-
-const HomeContent = styled.div`
-  font-size: 5rem;
-  height: 70%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+import PageWrapper from '../layouts/PageWrapper.jsx';
 
 const Triangle = styled.div`
   position: fixed;
@@ -24,12 +17,12 @@ const Triangle = styled.div`
 class Home extends Component {
   render() {
     return (
-      <HomeContent>
+      <PageWrapper>
         <Typist>
           Hey, I&lsquo;m Alexandra.
         </Typist>
         <Triangle></Triangle>
-      </HomeContent>
+      </PageWrapper>
     );
   };
 };
