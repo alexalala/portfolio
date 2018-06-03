@@ -9,12 +9,17 @@ const Me = styled.img`
   border-radius: 12px;
 `;
 
+const AboutText = styled.p`
+  color: #ff9fb0;
+  font-size: 2rem;
+`;
+
 class About extends Component {
   render() {
     return (
       <PageWrapper>
-        <Me src={require('../styles/assets/myself.jpg')} alt="myself"></Me>
-        <p>I&lsquo;m Alexandra. A front-end web developer based in Norwich. I enjoy creating beautiful, innovative interfaces that people love to use.</p>
+        <Me src={require('../styles/assets/me.svg')} alt="myself"></Me>
+        <AboutText>I&lsquo;m Alexandra. A front-end web developer based in Norwich. I enjoy creating beautiful, innovative interfaces that people love to use.</AboutText>
       </PageWrapper>
     );
   };
