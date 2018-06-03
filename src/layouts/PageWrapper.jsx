@@ -14,6 +14,7 @@ class PlainPageWrapper extends Component {
 const PageWrapper = styled(PlainPageWrapper)`
   align-items: center;
   display: flex;
+  flex-direction: column;
   height: 100vh;
   justify-content: center;
   margin-left: 10%;

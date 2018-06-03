@@ -7,20 +7,25 @@ import * as palette from '../styles/variables.js';
 import PageWrapper from '../layouts/PageWrapper.jsx';
 
 const Triangle = styled.div`
-  position: fixed;
-  bottom: 0;
   border-left: 50vw solid ${palette.white};
   border-right: 50vw solid ${palette.white};
   border-top: 100px solid ${palette.primary_color};
+`;
+
+const Typed = styled(Typist)`
+  align-items: center;
+  display: flex;
+  height: 90vh;
+  font-size: 4rem;
 `;
 
 class Home extends Component {
   render() {
     return (
       <PageWrapper>
-        <Typist>
+        <Typed>
           Hey, I&lsquo;m Alexandra.
-        </Typist>
+        </Typed>
         <Triangle></Triangle>
       </PageWrapper>
     );
