@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+import { primary_colour } from '../styles/variables.js';
 import Subheader from '../components/Subheader.js';
 import PageWrapper from '../layouts/PageWrapper.jsx';
 

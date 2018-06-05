@@ -3,13 +3,13 @@ import styled from 'styled-components';
 import Typist from 'react-typist';
 
 import 'react-typist/dist/Typist.css';
-import * as palette from '../styles/variables.js';
+import { primary_colour, white } from '../styles/variables.js';
 import PageWrapper from '../layouts/PageWrapper.jsx';
 
 const Triangle = styled.div`
-  border-left: 50vw solid ${palette.white};
-  border-right: 50vw solid ${palette.white};
-  border-top: 100px solid ${palette.primary_color};
+  border-left: 50vw solid ${white};
+  border-right: 50vw solid ${white};
+  border-top: 100px solid ${primary_colour};
 `;
 
 const Typed = styled(Typist)`
