@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+import { tertiary_colour, tertiary_font } from '../styles/variables.js';
 import PageWrapper from '../layouts/PageWrapper.jsx';
 
 class About extends Component {
@@ -8,7 +9,7 @@ class About extends Component {
     return (
       <PageWrapper className={this.props.className}>
         <img src={require('../styles/assets/me.svg')} alt="myself"></img>
-        <p>I&lsquo;m Alexandra. A front-end web developer based in Norwich. I enjoy creating beautiful, innovative interfaces that people love to use.</p>
+        <p>I&lsquo;m Alexandra. A front-end web developer based in Norwich.</p>
       </PageWrapper>
     );
   };
@@ -16,14 +17,13 @@ class About extends Component {
 
 const AboutStyled = styled(About)`
   img {
-    height: 240px;
-    margin: 2rem 0;
-    border-radius: 12px;
+    height: 13rem
   }
 
   p {
-    color: #ff9fb0;
-    font-size: 2rem;
+    color: ${tertiary_colour};
+    font-family: ${tertiary_font};
+    font-size: 1.5rem;
   }
 `;
 
