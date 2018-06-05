@@ -1,55 +1,61 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+import { primary_colour, white } from '../styles/variables.js';
 import Subheader from '../components/Subheader.js';
-
-const ContactContent = styled.div`
-  width: 80%;
-  margin-left: 10%;
-  text-align: left;
-`;
-
-const FormInput = styled.input`
-  width: 100%;
-  background-color: #fff;
-  box-sizing: border-box;
-  display: block;
-  margin: 1rem 0;
-  padding: 1rem;
-`;
-
-const FormTextarea = styled.textarea`
-  width: 100%;
-  background-color: #fff;
-  box-sizing: border-box;
-  display: block;
-  margin: 1rem 0;
-  padding: 1rem;
-`;
+import PageWrapper from '../layouts/PageWrapper.jsx';
 
 class Contact extends Component {
   render() {
     return (
-      <ContactContent>
+      <PageWrapper className={this.props.className}>
         <Subheader>Feel free to get in touch!</Subheader>
         <form action="https://formspree.io/contact@alexandramoo.re" method="POST">
           <label>
             Your name:
-            <FormInput type="text" name="name"></FormInput>
+            <input type="text" name="name"></input>
           </label>
           <label>
             Your email:
-            <FormInput type="email" name="_replyto"></FormInput>
+            <input type="email" name="_replyto"></input>
           </label>
           <label>
             Description:
-            <FormTextarea rows="3" cols="3" name="description"></FormTextarea>
+            <textarea rows="3" cols="3" name="description"></textarea>
           </label>
-          <FormInput type="submit" value="Send"></FormInput>
+          <input type="submit" value="Send"></input>
         </form>
-      </ContactContent>
+      </PageWrapper>
     );
   };
 };
 
-export default Contact;
+const styledContact = styled(Contact)`
+  background-color: ${primary_colour};
+  margin: 0;
+  width 100%;
+
+  input {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: ${white};
+    display: block;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+
+  form {
+    width: 70%;
+  }
+
+  textarea {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: ${white};
+    display: block;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+`;
+
+export default styledContact;

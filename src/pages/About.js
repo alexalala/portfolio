@@ -1,21 +1,30 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-const Me = styled.img`
-  height: 240px;
-  margin: 2rem 0;
-  border-radius: 12px;
-`;
+import { tertiary_colour, tertiary_font } from '../styles/variables.js';
+import PageWrapper from '../layouts/PageWrapper.jsx';
 
 class About extends Component {
   render() {
     return (
-      <div>
-        <Me src={require('../styles/assets/myself.jpg')} alt="myself"></Me>
-        <p>I&lsquo;m Alexandra. A front-end web developer based in Norwich. I enjoy creating beautiful, innovative interfaces that people love to use.</p>
-      </div>
+      <PageWrapper className={this.props.className}>
+        <img src={require('../styles/assets/me.svg')} alt="myself"></img>
+        <p>I&lsquo;m Alexandra. A front-end web developer based in Norwich.</p>
+      </PageWrapper>
     );
   };
 };
 
-export default About;
+const AboutStyled = styled(About)`
+  img {
+    height: 13rem
+  }
+
+  p {
+    color: ${tertiary_colour};
+    font-family: ${tertiary_font};
+    font-size: 1.5rem;
+  }
+`;
+
+export default AboutStyled;
