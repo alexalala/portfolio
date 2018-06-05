@@ -19,6 +19,7 @@ class App extends Component {
 /* GLOBAL STYLES */
 injectGlobal`
   .App {
+    box-sizing: border-box;
     text-align: center;
     background-color: #febcc8;
     font-family: "Raleway", sans-serif;
