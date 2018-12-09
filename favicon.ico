@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #febcc8;
+      }
+
+      .cls-2 {
+        font-size: 165.63px;
+        fill: #fff;
+        font-family: MyriadPro-Regular, Myriad Pro;
+      }
+    </style>
+  </defs>
+  <title>Asset 2</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <rect class="cls-1" width="200" height="200"/>
+        <text class="cls-2" transform="translate(49 150.59)">A</text>
+      </g>
+    </g>
+  </g>
+</svg>
