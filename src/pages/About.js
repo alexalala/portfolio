@@ -8,21 +8,21 @@ class About extends Component {
   render() {
     return (
       <PageWrapper className={this.props.className}>
-        <p>I&lsquo;m Alexandra. A front-end web developer based in Norwich.</p>
+        <p>I&lsquo;m Alexandra, a self-taught front end developer.</p>
+        <p>I've been working as a developer since '17 & teaching myself to code since '14.</p>
+        <p>I'm passionate about inclusivity - both through ensuring my code is accessible,
+          as well as through helping others from a range of backgrounds get into the industry.</p>
       </PageWrapper>
     );
   };
 };
 
 const AboutStyled = styled(About)`
-  img {
-    height: 13rem;
-  }
-
   p {
     color: ${tertiary_colour};
     font-family: ${tertiary_font};
     font-size: 1.5rem;
+    margin: 1rem;
   }
 `;
 
