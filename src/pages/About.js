@@ -8,7 +8,6 @@ class About extends Component {
   render() {
     return (
       <PageWrapper className={this.props.className}>
-        <img src={require('../styles/assets/me.svg')} alt="myself"></img>
         <p>I&lsquo;m Alexandra. A front-end web developer based in Norwich.</p>
       </PageWrapper>
     );
