@@ -2,9 +2,9 @@
 export const black = '#000';
 export const white = '#fff';
 
-export const primary_colour = '#febcc8';
+export const primary_colour = '#fbe4f5';
 export const secondary_colour = '#4d8c1e';
-export const tertiary_colour = '#ff9c9c';
+export const tertiary_colour = '#866d80';
 
 /* FONTS */
 export const primary_font = '"Raleway", sans-serif';

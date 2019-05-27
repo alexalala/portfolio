@@ -17,7 +17,7 @@ class About extends Component {
 
 const AboutStyled = styled(About)`
   img {
-    height: 13rem
+    height: 13rem;
   }
 
   p {

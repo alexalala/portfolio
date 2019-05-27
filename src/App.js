@@ -21,9 +21,9 @@ injectGlobal`
   .App {
     box-sizing: border-box;
     text-align: center;
-    background-color: #febcc8;
+    background-color: #fbe4f5;
     font-family: "Raleway", sans-serif;
-    color: #fff;
+    color: #464545;
     height: 100%;
   }
 `;
