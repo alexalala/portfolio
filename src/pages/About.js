@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import { tertiary_colour, tertiary_font } from '../styles/variables.js';
+import { tertiary_colour, tertiary_font } from '../assets/styles/variables.js';
 import PageWrapper from '../layouts/PageWrapper.jsx';
 import Subheader from '../components/Subheader.js';
 

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Typist from 'react-typist';
 
 import 'react-typist/dist/Typist.css';
-import { primary_colour, white } from '../styles/variables.js';
+import { primary_colour, white } from '../assets/styles/variables.js';
 import PageWrapper from '../layouts/PageWrapper.jsx';
 
 const Triangle = styled.div`

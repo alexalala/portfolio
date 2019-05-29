@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
-import * as palette from '../styles/variables.js';
+import * as palette from '../assets/styles/variables.js';
 
 const Nav = styled.ul`
   text-align: right;
