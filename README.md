@@ -11,7 +11,7 @@ Served using AWS Cloudfront & S3, using CodeBuild to push changes from Github to
 
 ## Deployment
 
-- Build the app to static files using `yarn build`.
+- Build the app to create a production bundle using `yarn build`.
 - Update the version in `buildspec.yml` & `package.json` following [semver](https://semver.org/).
 - Push changes into the `master` branch.
 
