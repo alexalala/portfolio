@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import Typist from 'react-typist';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import 'react-typist/dist/Typist.css';
-import { primary_colour, white, black } from '../assets/styles/variables.js';
+import { primary_colour, tertiary_colour, white, black } from '../assets/styles/variables.js';
 import PageWrapper from '../layouts/PageWrapper.jsx';
 
 const Triangle = styled.div`
@@ -13,12 +13,27 @@ const Triangle = styled.div`
   border-top: 100px solid ${primary_colour};
 `;
 
+const fadein = keyframes`
+  from { opacity: 0; }
+  to   { opacity: 1; }
+`;
+
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 90vh;
   font-size: 4rem;
+
+  p {
+    font-size: 1.5rem;
+    color: ${tertiary_colour};
+    margin: 0.5rem;
+    animation: ${fadein} 3s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
 `;
 
 const IconContainer = styled.div`
@@ -43,8 +58,10 @@ class Home extends Component {
       <PageWrapper>
         <Container>
           <Typist>
-            Hey, I&lsquo;m Alexandra.
+            Hey, I&lsquo;m Alexandra
           </Typist>
+          <p>Front end developer with a passion for inclusivity.</p>
+          <p>&#x2665;</p>
           <IconContainer>
             <a href="https://github.com/alexalala" aria-label="My Github profile">
               <FontAwesomeIcon icon={['fab', 'github']} />

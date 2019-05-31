@@ -4,7 +4,7 @@ export const white = '#fff';
 
 export const primary_colour = '#fbe4f5';
 export const secondary_colour = '#4d8c1e';
-export const tertiary_colour = '#866d80';
+export const tertiary_colour = '#b1378a';
 
 /* FONTS */
 export const primary_font = '"Raleway", sans-serif';
