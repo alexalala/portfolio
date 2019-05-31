@@ -46,13 +46,13 @@ class Home extends Component {
             Hey, I&lsquo;m Alexandra.
           </Typist>
           <IconContainer>
-            <a href="https://github.com/alexalala">
+            <a href="https://github.com/alexalala" aria-label="My Github profile">
               <FontAwesomeIcon icon={['fab', 'github']} />
             </a>
-            <a href="https://twitter.com/alexandraamoore">
+            <a href="https://twitter.com/alexandraamoore" aria-label="My Twitter profile">
               <FontAwesomeIcon icon={['fab', 'twitter']} />
             </a>
-            <a href="https://www.linkedin.com/in/alexandra-moore-27ba56157">
+            <a href="https://www.linkedin.com/in/alexandra-moore-27ba56157" aria-label="My Linkedin profile">
               <FontAwesomeIcon icon={['fab', 'linkedin']} />
             </a>
           </IconContainer>
