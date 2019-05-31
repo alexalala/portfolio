@@ -1,5 +1,5 @@
 /* COLOURS */
-export const black = '#000';
+export const black = '#464545';
 export const white = '#fff';
 
 export const primary_colour = '#fbe4f5';

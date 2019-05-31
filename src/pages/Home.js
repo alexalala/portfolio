@@ -4,7 +4,7 @@ import Typist from 'react-typist';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import 'react-typist/dist/Typist.css';
-import { primary_colour, white } from '../assets/styles/variables.js';
+import { primary_colour, white, black } from '../assets/styles/variables.js';
 import PageWrapper from '../layouts/PageWrapper.jsx';
 
 const Triangle = styled.div`
@@ -23,13 +23,17 @@ const Container = styled.div`
 
 const IconContainer = styled.div`
 position: absolute;
+display: flex;
+align-items: center;
+justify-content: center;
 bottom: 10vh;
 width: 100%;
 left: 0;
 font-size: 2.5rem;
 
-svg {
+a {
   margin: 0.5rem;
+  color: ${black};
 }
 `;
 
@@ -42,9 +46,15 @@ class Home extends Component {
             Hey, I&lsquo;m Alexandra.
           </Typist>
           <IconContainer>
-            <FontAwesomeIcon icon={['fab', 'github']} />
-            <FontAwesomeIcon icon={['fab', 'twitter']} />
-            <FontAwesomeIcon icon={['fab', 'linkedin']} />
+            <a href="https://github.com/alexalala">
+              <FontAwesomeIcon icon={['fab', 'github']} />
+            </a>
+            <a href="https://twitter.com/alexandraamoore">
+              <FontAwesomeIcon icon={['fab', 'twitter']} />
+            </a>
+            <a href="https://www.linkedin.com/in/alexandra-moore-27ba56157">
+              <FontAwesomeIcon icon={['fab', 'linkedin']} />
+            </a>
           </IconContainer>
         </Container>
         <Triangle></Triangle>
