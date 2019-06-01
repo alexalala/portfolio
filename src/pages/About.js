@@ -4,16 +4,24 @@ import styled from 'styled-components';
 import { tertiary_colour, tertiary_font } from '../assets/styles/variables.js';
 import PageWrapper from '../layouts/PageWrapper.jsx';
 import Subheader from '../components/Subheader.js';
+import Unicorn from '../components/unicorn/Unicorn.js';
+
+const skillsArray = [
+  'HTML5',
+  'CSS3',
+  'Javascript',
+  'React',
+  'Vue',
+  'AWS',
+  'Accesibility'
+];
 
 class About extends Component {
   render() {
     return (
       <PageWrapper className={this.props.className}>
-        <Subheader>About</Subheader>
-        <p>I&lsquo;m Alexandra, a self-taught front end developer.</p>
-        <p>I've been working as a developer since '17 & teaching myself to code since '14.</p>
-        <p>I'm passionate about inclusivity - both through ensuring my code is accessible,
-          as well as through helping others from a range of backgrounds get into the industry.</p>
+        <Subheader>Skills</Subheader>
+        <Unicorn />
       </PageWrapper>
     );
   };
