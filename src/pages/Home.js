@@ -23,7 +23,8 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   height: 90vh;
-  font-size: 4rem;
+  font-size: 3.75rem;
+  background-color: ${primary_colour};
 
   p {
     font-size: 1.5rem;

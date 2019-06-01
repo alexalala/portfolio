@@ -17,8 +17,6 @@ const PageWrapper = styled(PlainPageWrapper)`
   flex-direction: column;
   height: 100vh;
   justify-content: center;
-  margin-left: 10%;
-  width: 80%;
 `;
 
 export default PageWrapper;
