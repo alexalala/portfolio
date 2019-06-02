@@ -29,6 +29,7 @@ const Container = styled.div`
   p {
     font-size: 1.5rem;
     color: ${tertiary_colour};
+    font-weight: 100;
     margin: 0.5rem;
     animation: ${fadein} 3s;
     animation-delay: 1.5s;

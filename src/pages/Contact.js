@@ -28,7 +28,9 @@ const styledContact = styled(Contact)`
     background-repeat: no-repeat;
     text-decoration: none;
     color: ${black};
-    font-size: 3rem;
+    font-size: 2rem;
+    font-weight: 100;
+    margin-bottom: 1.5rem;
 
     &:hover {
       background-size: 100% 100%;
