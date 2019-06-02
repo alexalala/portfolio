@@ -8,7 +8,7 @@ import Unicorn from '../components/unicorn/Unicorn.js';
 const skills = [
   'HTML5',
   'CSS3',
-  'Javascript',
+  'JavaScript',
   'React',
   'Vue',
   'AWS',
@@ -22,6 +22,8 @@ class About extends Component {
   render() {
     return (
       <PageWrapper className={this.props.className}>
+        <Subheader>About</Subheader>
+
         <Subheader>Skills</Subheader>
         <div className="skills">
           {skills.map(skill =>
