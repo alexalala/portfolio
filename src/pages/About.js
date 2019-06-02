@@ -30,7 +30,7 @@ class About extends Component {
           <p>
             I love to help others from diverse backgrounds learn to code and get into the industry
             and have managed to achieve this by volunteering for a Code First:Girls course and
-            setting up a codebar chapter in Norwich
+            setting up a codebar chapter in Norwich.
           </p>
         </div>
         <Subheader>Skills</Subheader>
@@ -57,7 +57,6 @@ const AboutStyled = styled(About)`
   display: flex;
   justify-content: start;
   font-size: 1.5rem;
-  margin: 0 2rem;
 
   .copy-container {
     font-size: 1.25rem;
