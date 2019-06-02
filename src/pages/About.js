@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import styled from 'styled-components';
 
 import { tertiary_colour, tertiary_font } from '../assets/styles/variables.js';
@@ -13,14 +13,29 @@ const skillsArray = [
   'React',
   'Vue',
   'AWS',
-  'Accesibility'
+  'Accesibility',
+  'Making CSS Unicorns'
 ];
+
+const skillsArrayLastItem = skillsArray[skillsArray.length - 1];
 
 class About extends Component {
   render() {
     return (
       <PageWrapper className={this.props.className}>
         <Subheader>Skills</Subheader>
+        <div>
+          {skillsArray.map(skill =>
+            <span key={skill}>
+            {
+              (skill !== skillsArrayLastItem) ?
+                (<Fragment>{skill} / </Fragment>)
+              :
+                (<Fragment>{skill}</Fragment>)
+            }
+            </span>
+          )}
+        </div>
         <Unicorn />
       </PageWrapper>
     );
@@ -28,6 +43,12 @@ class About extends Component {
 };
 
 const AboutStyled = styled(About)`
+  position: relative;
+
+  .unicorn {
+    bottom: 0;
+  }
+
   p {
     color: ${tertiary_colour};
     font-family: ${tertiary_font};
