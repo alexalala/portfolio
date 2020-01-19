@@ -1,22 +1,20 @@
 import React, { Component } from 'react';
-import { Route, BrowserRouter } from 'react-router-dom';
+
 import { injectGlobal } from 'styled-components';
 // import fontawesome icons
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 
-import Main from './layouts/Main.jsx';
+import Routes from './Routes';
 
 library.add(fab);
 
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
         <div className="App">
-          <Route exact path="/" component={Main} />
+          <Routes />
         </div>
-      </BrowserRouter>
     );
   }
 }
