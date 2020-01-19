@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import { injectGlobal } from 'styled-components';
 // import fontawesome icons
@@ -9,26 +9,22 @@ import Routes from './Routes';
 
 library.add(fab);
 
-class App extends Component {
-  render() {
-    return (
-        <div className="App">
-          <Routes />
-        </div>
-    );
-  }
-}
+export default function App() {
+  return (
+    <div className="App">
+      <Routes />
+    </div>
+  )
+};
 
 /* GLOBAL STYLES */
 injectGlobal`
   .App {
     box-sizing: border-box;
     text-align: center;
-    background-color: #fbe4f5;
+    background-color: #FEFEFE;
     font-family: "Raleway", sans-serif;
     color: #464545;
     height: 100%;
   }
 `;
-
-export default App;
