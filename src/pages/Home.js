@@ -4,13 +4,8 @@ import Typist from 'react-typist';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import 'react-typist/dist/Typist.css';
-import { primary_colour, tertiary_colour, white, black } from '../assets/styles/variables.js';
+import { tertiary_colour, black } from '../assets/styles/variables.js';
 
-const Triangle = styled.div`
-  border-left: 50vw solid ${white};
-  border-right: 50vw solid ${white};
-  border-top: 100px solid ${primary_colour};
-`;
 
 const fadein = keyframes`
   from { opacity: 0; }
@@ -23,7 +18,6 @@ const Container = styled.div`
   justify-content: center;
   height: 90vh;
   font-size: 3.75rem;
-  background-color: ${primary_colour};
 
   p {
     font-size: 1.5rem;
@@ -74,7 +68,6 @@ export default function Home() {
           </a>
         </IconContainer>
       </Container>
-      <Triangle></Triangle>
     </div>
   )
 };
