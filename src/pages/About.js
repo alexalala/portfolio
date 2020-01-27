@@ -3,9 +3,12 @@ import styled from 'styled-components';
 
 import Subheader from '../components/Subheader.js';
 
+import AboutImage from '../assets/images/about.svg';
+
 export default function About() {
   return (
     <StyledContainer>
+      <StyledImage src={AboutImage} alt="" />
       <Subheader>About</Subheader>
       <div className="copy-container">
         <p>I'm a self-taught front end developer from Norwich.</p>
@@ -24,4 +27,8 @@ const StyledContainer = styled.div`
   flex-direction: column;
   justify-content: start;
   font-size: 1.5rem;
+`;
+
+const StyledImage = styled.img`
+  height: 20rem;
 `;
