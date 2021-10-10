@@ -5,7 +5,8 @@ import { faBook, faChalkboardTeacher } from '@fortawesome/free-solid-svg-icons';
 
 import Squiggle from '../components/Squiggle';
 import Bee from '../components/Bee';
-import Link from '../components/Link'
+import Link from '../components/Link';
+import Underline from '../components/Underline';
 import Subheader from '../components/Subheader';
 import 'react-typist/dist/Typist.css';
 import { black } from '../assets/styles/variables.js';
@@ -35,19 +36,31 @@ export default function Home() {
       </Container>
       <Squiggle />
       <SecondaryContainer>
-        <Subheader>Latest Achievements</Subheader>
+        <Subheader>Thoughts and Talks</Subheader>
         <StyledList>
+          <StyledDate>SEPTEMBER 2021</StyledDate>
           <li>
-            <FontAwesomeIcon icon={faBook} />
-            <Link to="https://alexalala.hashnode.dev/track-my-savings-keep-tabs-on-your-savings-on-a-monthly-basis" text="Blog Post - Creating 'Track My Savings' with Auth0 and React" />
+            <div>
+              <FontAwesomeIcon icon={faBook} />
+              <p><Underline>Blog Post</Underline> - </p>
+            </div>
+            <Link href="https://alexalala.hashnode.dev/track-my-savings-keep-tabs-on-your-savings-on-a-monthly-basis" text="Creating 'Track My Savings' with Auth0 and React" />
           </li>
+          <StyledDate>AUGUST 2021</StyledDate>
           <li>
-            <FontAwesomeIcon icon={faBook} />
-            <Link to="https://www.statuscake.com/blog/design-systems-a-storybook-and-react-tutorial/" text="Blog Post - Design Systems – A Storybook and React Tutorial" />
+            <div>
+              <FontAwesomeIcon icon={faBook} />
+              <p><Underline>Blog Post</Underline> - </p>
+            </div>
+            <Link href="https://www.statuscake.com/blog/design-systems-a-storybook-and-react-tutorial/" text="Design Systems – A Storybook and React Tutorial" />
           </li>
+          <StyledDate>JULY 2021</StyledDate>
           <li>
-            <FontAwesomeIcon icon={faChalkboardTeacher} />
-            <p>Talk @ Fashion Retail Academy - Accessibility and the web</p>
+            <div>
+              <FontAwesomeIcon icon={faChalkboardTeacher} />
+              <p><Underline>Talk</Underline> - </p>
+            </div>
+            <p>Accessibility and the web @ Fashion Retail Academy</p>
           </li>
         </StyledList>
       </SecondaryContainer>
@@ -102,14 +115,31 @@ const StyledList = styled.ul`
 
   li {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     > a, p {
       margin: 0;
     }
 
-    > svg {
-      margin: 1rem;
+    svg {
+      margin: 0 1rem;
+    }
+
+    > div {
+      display: flex;
+    }
+
+    @media only screen and (min-width: 800px) {
+      flex-direction: row;
     }
   }
+`;
+
+const StyledDate = styled.span`
+  text-transform: uppercase;
+  color: #909090;
+  font-size: 1rem;
+  margin-top: 1rem;
 `;

@@ -38,7 +38,7 @@ const StyledContainer = styled.div`
   justify-content: start;
   font-size: 1.5rem;
   text-align: left;
-  margin: 0 5rem;
+  margin: 0 2rem;
 `;
 
 const StyledImage = styled.img`
