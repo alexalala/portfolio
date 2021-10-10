@@ -40,7 +40,7 @@ const fadein = keyframes`
 const StyledBeeImg = styled(BeeImg)`
     position: absolute;
     left: 2rem;
-    top: 12.25rem;
+    top: 11.25rem;
 `;
 
 const StyledTrail = styled(Trail)`
