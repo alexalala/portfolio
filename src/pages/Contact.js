@@ -11,8 +11,10 @@ export default function Contact() {
     <StyledContainer>
       <StyledImage src={ContactImage} alt="" />
       <Subheader>Feel free to get in touch!</Subheader>
-      <Link href="mailto:mail@alexandramoo.re" text="Email me - mail@alexandramoo.re" />
-      <Link href="https://twitter.com/alexandraamoore" text="Tweet me - @alexandrathedev" />
+      <StyledLinkContainer>
+        <Link href="mailto:mail@alexandramoo.re" text="Email me - mail@alexandramoo.re" />
+        <Link href="https://twitter.com/alexandrathedev" text="Tweet me - @alexandrathedev" />
+      </StyledLinkContainer>
     </StyledContainer>
   );
 };
@@ -23,4 +25,11 @@ const StyledContainer = styled.div`
 
 const StyledImage = styled.img`
   height: 20rem;
+  margin: 2rem;
+`;
+
+const StyledLinkContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;

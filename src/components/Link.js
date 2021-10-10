@@ -22,6 +22,7 @@ const StyledLink = styled.a`
   font-size: 1.25rem;
   font-weight: 100;
   margin-bottom: 1.5rem;
+  width: fit-content;
 
   &:hover {
     background-size: 100% 100%;

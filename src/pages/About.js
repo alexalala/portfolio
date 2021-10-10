@@ -31,4 +31,5 @@ const StyledContainer = styled.div`
 
 const StyledImage = styled.img`
   height: 20rem;
+  margin: 2rem;
 `;
