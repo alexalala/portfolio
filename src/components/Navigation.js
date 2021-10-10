@@ -33,7 +33,7 @@ const StyledHeading = styled.p`
   font-size: 2rem;
   padding: 5px;
   margin: 0.5rem 1rem 1rem 1rem;
-  background: linear-gradient(180deg,transparent 88%,#a9d8f3 0);
+  background: linear-gradient(180deg,transparent 70%,#a9d8f354 0);
 `;
 
 const StyledList = styled.ul`

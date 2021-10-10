@@ -14,7 +14,7 @@ const Link = ({ href, text }) => {
 export default Link;
 
 const StyledLink = styled.a`
-  background-image: linear-gradient(180deg,transparent 65%,#a9d8f3 0);
+  background-image: linear-gradient(180deg,transparent 65%,#a9d8f354 0);
   background-size: 0 100%;
   background-repeat: no-repeat;
   text-decoration: none;

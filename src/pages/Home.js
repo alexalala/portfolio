@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBook, faChalkboardTeacher } from '@fortawesome/free-solid-svg-icons';
 
-import Timeline from '../assets/images/career-timeline.svg';
 import Squiggle from '../components/Squiggle';
 import Bee from '../components/Bee';
+import Link from '../components/Link'
+import Subheader from '../components/Subheader';
 import 'react-typist/dist/Typist.css';
 import { black } from '../assets/styles/variables.js';
 
@@ -32,10 +34,23 @@ export default function Home() {
         </IconContainer>
       </Container>
       <Squiggle />
-      <TimelineContainer>
-        <StyledHeading>My Timeline Into Tech</StyledHeading>
-        <StyledTimeline src={Timeline} alt="career timeline" />
-      </TimelineContainer>
+      <SecondaryContainer>
+        <Subheader>Latest Achievements</Subheader>
+        <StyledList>
+          <li>
+            <FontAwesomeIcon icon={faBook} />
+            <Link to="https://alexalala.hashnode.dev/track-my-savings-keep-tabs-on-your-savings-on-a-monthly-basis" text="Blog Post - Creating 'Track My Savings' with Auth0 and React" />
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faBook} />
+            <Link to="https://www.statuscake.com/blog/design-systems-a-storybook-and-react-tutorial/" text="Blog Post - Design Systems – A Storybook and React Tutorial" />
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faChalkboardTeacher} />
+            <p>Talk @ Fashion Retail Academy - Accessibility and the web</p>
+          </li>
+        </StyledList>
+      </SecondaryContainer>
     </div>
   )
 };
@@ -56,38 +71,45 @@ const Container = styled.div`
   }
 `;
 
-const TimelineContainer = styled.div`
+const SecondaryContainer = styled.div`
   background: linear-gradient(180deg,rgba(255,255,255,1) 0%,rgb(235, 242, 249) 100%);
 `;
 
 const IconContainer = styled.div`
-position: absolute;
-display: flex;
-align-items: center;
-justify-content: center;
-bottom: 3vh;
-width: 100%;
-left: 0;
-font-size: 2.5rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 3vh;
+  width: 100%;
+  left: 0;
+  font-size: 2.5rem;
 
-a {
-  margin: 0.5rem;
-  color: ${black};
-}
+  a {
+    margin: 0.5rem;
+    color: ${black};
+  }
 `;
 
-const StyledTitle= styled.h1`
+const StyledTitle = styled.h1`
   font-family: 'Playfair Display', serif;
   padding: 2rem;
   font-size: 4rem;
 `;
 
-const StyledHeading = styled.h2`
-  font-family: 'Playfair Display', serif;
-  padding: 2rem;
-  font-size: 2.5rem;
-`;
+const StyledList = styled.ul`
+  list-style-type: none;
 
-const StyledTimeline = styled.img`
-  max-width: 45rem;
+  li {
+    display: flex;
+    align-items: center;
+
+    > a, p {
+      margin: 0;
+    }
+
+    > svg {
+      margin: 1rem;
+    }
+  }
 `;
