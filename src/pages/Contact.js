@@ -24,7 +24,7 @@ const StyledContainer = styled.div`
 `;
 
 const StyledImage = styled.img`
-  height: 20rem;
+  height: 12rem;
   margin: 2rem;
 `;
 
@@ -32,4 +32,5 @@ const StyledLinkContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 3rem;
 `;
