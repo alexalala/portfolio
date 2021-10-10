@@ -86,6 +86,7 @@ const Container = styled.div`
 
 const SecondaryContainer = styled.div`
   background: linear-gradient(180deg,rgba(255,255,255,1) 0%,rgb(235, 242, 249) 100%);
+  padding-bottom: 1rem;
 `;
 
 const IconContainer = styled.div`
