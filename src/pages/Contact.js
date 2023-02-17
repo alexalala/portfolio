@@ -12,7 +12,6 @@ export default function Contact() {
       <StyledImage src={ContactImage} alt="" />
       <Subheader>Feel free to get in touch!</Subheader>
       <StyledLinkContainer>
-        <Link href="mailto:mail@alexandramoo.re" text="Email me - mail@alexandramoo.re" />
         <Link href="https://twitter.com/alexandrathedev" text="Tweet me - @alexandrathedev" />
       </StyledLinkContainer>
     </StyledContainer>
