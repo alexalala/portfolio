@@ -7,6 +7,7 @@ import Link from '../components/Link';
 import ContactImage from '../assets/images/contact.svg';
 
 export default function Contact() {
+  console.log('test')
   return (
     <StyledContainer>
       <StyledImage src={ContactImage} alt="" />

@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { injectGlobal } from 'styled-components';
-// import fontawesome icons
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 
